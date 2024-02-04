@@ -1,7 +1,11 @@
 /* styles.css */
 
 img{
-    width: 600px;
+    width: 100%;
     float: left;
     margin-right: 10px;
+  }
+  .back{
+    background-image:url("../../assets/back.jpg");
+    background-attachment: fixed;
   }

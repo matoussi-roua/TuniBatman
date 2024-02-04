@@ -14,15 +14,16 @@ import { CommunityComponent } from './community/community.component';
 import path from 'path';
 
 const routes: Routes = [
+  { path: "", component: SignUpComponent },
   { path: "footer", component: FooterComponent },
-  { path: "Signin", component: SignInComponent },
-  { path: "Signup", component: SignUpComponent },
+  { path: "signin", component: SignInComponent },
+  { path: "signup", component: SignUpComponent },
   { path: "home", component: HomeComponent },
   { path: "navbar", component: NavbarComponent },
   { path: "community", component: CommunityComponent },
   { path: "account", component: AccountComponent },
   { path: "alert", component: AlertComponent },
-  { path: "footer", component: FooterComponent },
+  { path: "formation", component: FormationComponent },
   { path: "footer", component: FooterComponent },
   { path: "footer", component: FooterComponent },
 ];
