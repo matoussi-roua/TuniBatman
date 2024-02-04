@@ -15,6 +15,7 @@ import { AddAlertComponent } from './add-alert/add-alert.component';
 import { AddFormationComponent } from './add-formation/add-formation.component';
 import { CommunityComponent } from './community/community.component';
 import { AlerteAccountComponent } from './alerte-account/alerte-account.component';
+import { EditAccountComponent } from './edit-account/edit-account.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { AlerteAccountComponent } from './alerte-account/alerte-account.componen
     AddAlertComponent,
     AddFormationComponent,
     CommunityComponent,
-    AlerteAccountComponent
+    AlerteAccountComponent,
+    EditAccountComponent
   ],
   imports: [
     BrowserModule,
