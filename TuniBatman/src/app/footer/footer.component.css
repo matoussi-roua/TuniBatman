@@ -1,10 +1,26 @@
-/* .logo{
-
-}
-.img.logo{
-  padding: 10px;
-} */
 
 img{
-  width: 100px;
+  width: 50%;
 }
+.me-5 span{
+  color: aliceblue;
+}
+
+h6,p{
+  color: aliceblue;
+
+}
+
+footer {
+background-color: #242323;
+}
+.me-4{
+
+  color: rgb(234, 231, 231);
+  background-color: rgb(48, 46, 46);
+  
+}
+ .me-4 i {
+  color: aliceblue;
+} 
+
