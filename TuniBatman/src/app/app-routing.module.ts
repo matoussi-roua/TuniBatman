@@ -11,6 +11,7 @@ import { FormationComponent } from './formation/formation.component';
 import { AddAlertComponent } from './add-alert/add-alert.component';
 import { AddFormationComponent } from './add-formation/add-formation.component';
 import { CommunityComponent } from './community/community.component';
+import { AlertAccountComponent } from './alert-account/alert-account.component';
 import path from 'path';
 
 const routes: Routes = [
@@ -26,6 +27,7 @@ const routes: Routes = [
   { path: "formation", component: FormationComponent },
   { path: "footer", component: FooterComponent },
   { path: "footer", component: FooterComponent },
+  { path: "hist", component: AlertAccountComponent }
 ];
 
 @NgModule({
