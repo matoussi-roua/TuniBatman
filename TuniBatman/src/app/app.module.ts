@@ -16,6 +16,7 @@ import { AddFormationComponent } from './add-formation/add-formation.component';
 import { CommunityComponent } from './community/community.component';
 import { AlerteAccountComponent } from './alerte-account/alerte-account.component';
 import { EditAccountComponent } from './edit-account/edit-account.component';
+import { NotifComponent } from './notif/notif.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { EditAccountComponent } from './edit-account/edit-account.component';
     AddFormationComponent,
     CommunityComponent,
     AlerteAccountComponent,
-    EditAccountComponent
+    EditAccountComponent,
+    NotifComponent
   ],
   imports: [
     BrowserModule,
