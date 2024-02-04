@@ -17,6 +17,7 @@ import { CommunityComponent } from './community/community.component';
 import { AlerteAccountComponent } from './alerte-account/alerte-account.component';
 import { EditAccountComponent } from './edit-account/edit-account.component';
 import { NotifComponent } from './notif/notif.component';
+import { SidebarreComponent } from './sidebarre/sidebarre.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { NotifComponent } from './notif/notif.component';
     CommunityComponent,
     AlerteAccountComponent,
     EditAccountComponent,
-    NotifComponent
+    NotifComponent,
+    SidebarreComponent
   ],
   imports: [
     BrowserModule,
