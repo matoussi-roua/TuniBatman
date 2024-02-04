@@ -1,0 +1,49 @@
+body {
+    font-family: 'Lato', sans-serif;
+    
+  }
+  
+  h1 {
+    margin-bottom: 40px;
+  }
+  
+  label {
+    color: rgba(0, 0, 0, 0.848);
+  }
+  
+  .btn-send {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    width: 80%;
+    margin-left: 3px;
+    
+    }
+  .help-block.with-errors {
+    color: #ff5050;
+    margin-top: 5px;
+  
+  } 
+  
+  .card{
+  margin-left: 10%;
+  margin-right: 10%;
+  border-color: rgba(0, 0, 0, 0.848);
+  
+  }
+  
+  .col-md-12 input{
+    color: rgb(255, 255, 255);
+  }
+  h1{
+    color: rgba(0, 0, 0, 0.848);
+  }
+  .bouton{
+    background-color: black;
+    margin :auto;
+  }
+
+  .card-body{
+    padding-top: 0;
+    margin-top: 0;
+  }
