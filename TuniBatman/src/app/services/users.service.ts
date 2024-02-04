@@ -8,26 +8,29 @@ import { Users } from '../models/users';
 })
 export class UsersService {
 
-  constructor(private httpclient: HttpClient) { 
-    
-  }
-  getallusers(): Observable<Users[]> {
-    return this.httpclient.get<Users[]>("http://localhost:3000/getAllUsers")
-  }
-  deleteuser(id: number): Observable<Users> {
-    return this.httpclient.delete<Users>("http://localhost:3000/deleteuser/" + id);
+  constructor(private httpClient: HttpClient) { }
 
+  getAllUsers(): Observable<Users[]> {
+    return this.httpClient.get<Users[]>("http://localhost:3000/users");
   }
-  getuserbyid(id: number): Observable<Users> {
-    return this.httpclient.get<Users>("http://localhost:3000/getuserbyid/" + id);
+
+  deleteuser(id: number): Observable<Users> {
+    return this.httpClient.delete<Users>("http://localhost:3000/users/" + id);
   }
+
+  getUserById(id: number): Observable<Users> {
+    return this.httpClient.get<Users>("http://localhost:3000/users/" + id);
+  }
+
   updateUserInfo(user: Users): Observable<Users> {
-    return this.httpclient.put<Users>("http://localhost:3000updateuser/" + user.id, user);
+    return this.httpClient.put<Users>("http://localhost:3000/users/" + user.id, user);
   }
+
   addUser(user: Users): Observable<Users> {
-    return this.httpclient.post<Users>("http://localhost:3000/adduser/", user);
+    return this.httpClient.post<Users>("http://localhost:3000/users/", user);
   }
 }
+
 /*
 export class UsersService {
 

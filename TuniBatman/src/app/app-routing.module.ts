@@ -15,13 +15,13 @@ import path from 'path';
 
 const routes: Routes = [
   { path: "footer", component: FooterComponent },
-  { path: "SignIn", component: SignInComponent },
-  { path: "SignUp", component: SignUpComponent },
+  { path: "Signin", component: SignInComponent },
+  { path: "Signup", component: SignUpComponent },
   { path: "home", component: HomeComponent },
   { path: "navbar", component: NavbarComponent },
-  { path: "footer", component: FooterComponent },
-  { path: "footer", component: FooterComponent },
-  { path: "footer", component: FooterComponent },
+  { path: "community", component: CommunityComponent },
+  { path: "account", component: AccountComponent },
+  { path: "alert", component: AlertComponent },
   { path: "footer", component: FooterComponent },
   { path: "footer", component: FooterComponent },
   { path: "footer", component: FooterComponent },

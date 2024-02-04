@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UsersService } from '../services/users.service';
-import { Users } from '../models/users';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 
 @Component({
   selector: 'app-home',
@@ -8,15 +8,23 @@ import { Users } from '../models/users';
   styleUrl: './home.component.css'
 })
 export class HomeComponent implements OnInit {
-  usersrv: any;
-  constructor( usersrv:UsersService){}
-  ngOnInit(): void {
-    this.usersrv.getAllUsers().subscribe(
-      (variable: Users) => {
-        console.log("heyoooo",this)
-      }
-    );
-    throw new Error('Method not implemented.');
+  constructor(private usersrv:UsersService){}
+  ngOnInit(){
+      this.usersrv.getAllUsers().subscribe(
+        (data: any) => {
+          console.log(data);
+        },
+        (error: HttpErrorResponse) => {
+          console.error('Error:', error);
+        }
+      );
+    };
   }
-
-}
+  // ngOnInit():{
+  //   this.usersrv.getAllUsers().subscribe(
+  //     (variable: Users[]) => {
+  //       console.log("heyoooo",variable)
+  //     }
+  //   );
+  //   throw new Error('Method not implemented.');
+  // }
