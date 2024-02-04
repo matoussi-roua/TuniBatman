@@ -1,5 +1,6 @@
 body {
   font-family: 'Lato', sans-serif;
+  
 }
 
 h1 {
@@ -7,7 +8,7 @@ h1 {
 }
 
 label {
-  color: #333;
+  color: rgba(9, 44, 215, 0.848);
 }
 
 .btn-send {
@@ -16,14 +17,24 @@ label {
   letter-spacing: 0.2em;
   width: 80%;
   margin-left: 3px;
+  
   }
 .help-block.with-errors {
   color: #ff5050;
   margin-top: 5px;
 
-}
+} 
 
 .card{
-margin-left: 10px;
-margin-right: 10px;
+margin-left: 10%;
+margin-right: 10%;
+border-color: rgba(9, 44, 215, 0.848);
+
+}
+
+.col-md-12 input{
+  color: rgb(255, 255, 255);
+}
+h1{
+  color: rgba(9, 44, 215, 0.848);
 }
