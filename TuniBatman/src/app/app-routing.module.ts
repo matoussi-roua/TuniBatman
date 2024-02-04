@@ -11,6 +11,7 @@ import { FormationComponent } from './formation/formation.component';
 import { AddAlertComponent } from './add-alert/add-alert.component';
 import { AddFormationComponent } from './add-formation/add-formation.component';
 import { CommunityComponent } from './community/community.component';
+import { AlerteAccountComponent } from './alerte-account/alerte-account.component'; //because i added a new componenet that is'nt in the main repositry
 import path from 'path';
 
 const routes: Routes = [

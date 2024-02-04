@@ -14,6 +14,7 @@ import { FormationComponent } from './formation/formation.component';
 import { AddAlertComponent } from './add-alert/add-alert.component';
 import { AddFormationComponent } from './add-formation/add-formation.component';
 import { CommunityComponent } from './community/community.component';
+import { AlerteAccountComponent } from './alerte-account/alerte-account.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { CommunityComponent } from './community/community.component';
     FormationComponent,
     AddAlertComponent,
     AddFormationComponent,
-    CommunityComponent
+    CommunityComponent,
+    AlerteAccountComponent
   ],
   imports: [
     BrowserModule,
