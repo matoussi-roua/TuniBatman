@@ -15,6 +15,10 @@ import { AddAlertComponent } from './add-alert/add-alert.component';
 import { AddFormationComponent } from './add-formation/add-formation.component';
 import { CommunityComponent } from './community/community.component';
 import { AlertAccountComponent } from './alert-account/alert-account.component';
+import { CommunityPartComponent } from './community-part/community-part.component';
+import { NotifComponent } from './notif/notif.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { EditaccountComponent } from './editaccount/editaccount.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +34,11 @@ import { AlertAccountComponent } from './alert-account/alert-account.component';
     AddAlertComponent,
     AddFormationComponent,
     CommunityComponent,
-    AlertAccountComponent
+    AlertAccountComponent,
+    CommunityPartComponent,
+    NotifComponent,
+    SidebarComponent,
+    EditaccountComponent
   ],
   imports: [
     BrowserModule,

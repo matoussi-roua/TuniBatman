@@ -1,0 +1,98 @@
+<div class="container">
+   <div class="row">
+      <div class="col-md-12">
+         <div id="content" class="content content-full-width">
+            <!-- begin profile -->
+            <div class="profile">
+               <div class="profile-header">
+                  <!-- BEGIN profile-header-cover -->
+                  <div class="profile-header-cover"></div>
+                  <!-- END profile-header-cover -->
+                  <!-- BEGIN profile-header-content -->
+                  <div class="profile-header-content">
+                     <!-- BEGIN profile-header-img -->
+                     <div class="profile-header-img">
+                        <img src="../../assets/user.jpeg" alt="">
+                     </div>
+                     <!-- END profile-header-img -->
+                     <!-- BEGIN profile-header-info -->
+                     <div class="profile-header-info">
+                        <h4 class="m-t-10 m-b-5"style="color: black;">Ahmed</h4>
+                        <p class="m-b-10" style="color: black;"><b>Current Community : </b></p>
+                        <a href="#" class="btn btn-sm btn-info mb-2" style="background-color: black; color: white;">Tunis</a>
+                     </div>
+                     <!-- END profile-header-info -->
+                  </div>
+                  <!-- END profile-header-content -->
+                  <!-- BEGIN profile-header-tab -->
+                  <ul class="profile-header-tab nav nav-tabs">
+                     <li class="nav-item"><a href="https://www.bootdey.com/snippets/view/bs4-profile-with-timeline-posts" target="__blank" class="nav-link_">ALERTS</a></li>
+                     <li class="nav-item"><a href="https://www.bootdey.com/snippets/view/bs4-profile-about" target="__blank" class="nav-link_">USERS</a></li>
+                  </ul>
+                  <!-- END profile-header-tab -->
+               </div>
+            </div>
+            <app-sidebar style="float: left;" class="col-lg-1"></app-sidebar>
+            <!-- end profile -->
+            <!-- begin profile-content -->
+            <div class="profile-content col-lg-10" style="float: right;">
+               <!-- begin tab-content -->
+               <div class="tab-content p-0">
+                  <!-- begin #profile-post tab -->
+                  <div class="tab-pane fade active show" id="profile-post">
+                     <!-- begin timeline -->
+                     <ul class="timeline" *ngFor="let alert of listAlert">
+                        <li >
+                           <!-- begin timeline-body -->
+                           <div class="timeline-body">
+                              <div class="timeline-header">
+                                 <span class="userimage"><img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt=""></span>
+                                 <span class="username"><a href="">Sean Ngu</a> <small></small></span>
+                                 <span class="pull-right text-muted">location</span>
+                              </div>
+                              <div class="media-body">
+                                <a href="#">
+                                    <!-- <span class="float-right text-info">Delivered on Mon, Nov 12, 7:18 PM <i class="icofont-check-circled text-success"></i></span> -->
+                                </a>
+                                <h6 class="mb-2">
+                                    <a href="#"></a><b>Type :</b>
+                                    <a href="#" class="text-black">  {{alert.type}}</a>
+                                </h6>
+                                <p class="text-gray mb-1"><b> Details : </b>{{alert.details}}
+                                </p>
+                                <p class="text-gray mb-3"><i class="icofont-list"></i>  <i class="icofont-clock-time ml-2"></i><b>Location :</b>  {{alert.location}}</p>
+                                <p class="text-dark">
+                                </p>
+                                <hr>
+                                <div class="float-right">
+                                    <a class="btn btn-sm btn-outline-primary" href="#" style="background-color: black; color: white; border: 1px solid black; margin-right: 2%;"><i class="icofont-headphone-alt"></i>Proceed</a>
+                                    <a class="btn btn-sm btn-primary" href="#" style="background-color: black; color: white; border: 1px solid black;margin-right: 2%;"><i class="icofont-refresh"></i>In Progress</a>
+                                    <a class="btn btn-sm btn-outline-primary" routerLink="/notif" style="background-color: rgb(249, 248, 248); color: rgb(35, 35, 35); border: 1px solid rgb(255, 255, 255)"><i class="icofont-headphone-alt"></i>Done</a>
+                                </div>
+                               
+                            </div>
+                            </div> 
+                           <!-- end timeline-body -->
+                        </li>
+                        <li>
+                           <!-- begin timeline-icon -->
+                           <div class="timeline-icon">
+                              <a href="javascript:;">&nbsp;</a>
+                           </div>
+                           <!-- end timeline-icon -->
+                           <!-- begin timeline-body -->
+                           
+                           <!-- begin timeline-body -->
+                        </li>
+                     </ul>
+                     <!-- end timeline -->
+                  </div>
+                  <!-- end #profile-post tab -->
+               </div>
+               <!-- end tab-content -->
+            </div>
+            <!-- end profile-content -->
+         </div>
+      </div>
+   </div>
+</div>
